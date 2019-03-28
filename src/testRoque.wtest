@@ -1,0 +1,12 @@
+import enunciado1.*
+import enunciado2.*
+import enunciado3.*
+import enunciado4.*
+test "roque trabaja" {
+	roque.tuPupiloEs(pepita)
+    roque.entrenar()
+    roque.tuPupiloEs(pipa)
+    roque.entrenar()
+	assert.that(pipa)
+
+}
