@@ -3,8 +3,11 @@ import enunciado3.*
 
 object pepon {
 	var energia=0
-	method comercomida(_comida){
+	method comerComida(_comida){
    	energia+=(_comida.energia()/2)
+   }
+   method comer(gramos){
+   	energia+=(gramos/2)
    }
 	method volar(kilometros) {
      energia-=1
@@ -15,7 +18,7 @@ object pepon {
    
    method haceLoQueQuieras(){
    	if(self.estaDebil()){
-   		self.comercomida(alpiste)	
+   		self.comerComida(alpiste)	
    	}
    	if(self.estaFeliz()){
    		self.volar(1)
