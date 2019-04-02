@@ -15,6 +15,9 @@ object pepita {
 	method energia(){
 		return energia
 	}
+	method ganarEnergia(cant){
+		energia+=cant
+	}
    method volar(kilometros) {
      energia = energia - (10+kilometros)
    }

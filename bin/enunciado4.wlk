@@ -31,6 +31,12 @@ object pepon {
    method estaFeliz(){
    	return energia>500 and energia<1000
    }
+   method ganarEnergia(cant){
+		energia+=cant
+	}
+	method energia(){
+		return energia
+	}
 }
 object pipa{
 	var kms=0
