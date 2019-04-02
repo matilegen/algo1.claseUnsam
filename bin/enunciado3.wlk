@@ -1,10 +1,14 @@
 import enunciado2.*
 object roque {
-	method entrenar(ave){
-		ave.volar(10)
-		ave.comer(300)
-		ave.volar(5)
-		ave.haceLoQueQuieras()
+	var pupilo
+	method entrenar(){
+		pupilo.volar(10)
+		pupilo.comer(300)
+		pupilo.volar(5)
+		pupilo.haceLoQueQuieras()
 	}
-	
+	method tuPupiloEs(ave){
+		pupilo=ave
+	}
+	method entreno(ave){return ave==pupilo}
 }
